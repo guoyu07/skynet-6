@@ -12,8 +12,11 @@ Browser Games
 Download Games
   >Continue to build the library and stuff
   >Add a search feature to just the downloadable games
+  >Fix the spacing between the columns
+  >Make the whole grid reactive to screen sizes
   
 Other
   >Fix the design of the UI, make it look nicer
   >Fix the boundaries so it's the size of the screen. 
+  >Make the website with reactive elements so it looks the same across all devices
   >Add link to the proxy
