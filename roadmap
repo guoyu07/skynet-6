@@ -8,9 +8,9 @@ Top 3 things I want to work on right now, in no actual order.
 
   1.Get broswer games
   2.Add search feature (downloadable games first?)
-  3.Add pictures in and fix download games formatting
+  3.Fix the formatting of the downloads page
   4.Add link to proxy
-  5.Get all of the games working for download
+  5.
 
 <------------------------------------>
 
@@ -26,10 +26,9 @@ Download Games
   >Add a search feature to just the downloadable games
   >Fix the spacing between the columns
   >Make the whole grid reactive to screen sizes
-  >Add the pictures back in
   
 Other
   >Fix the design of the UI, make it look nicer
   >Fix the boundaries so it's the size of the screen. 
   >Make the website with reactive elements so it looks the same across all devices
-  >Add link to the proxy
+
