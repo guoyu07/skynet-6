@@ -6,6 +6,8 @@
 .container {
     @include display-flex-flow(column, nowrap);
 
+    @include material-background-color(3);
+
     .wrapper-nav {
         @include flex(0);
         @include display-flex-flow(row, wrap);
@@ -34,11 +36,11 @@
         .nav-logo {
             @extend .nav-link;
 
-            a { text-decoration: overline; }
+            a { text-decoration: none; }
         }
 
         .active {
-            @include material-linear-gradient(10, 7, 180deg);
+            a { text-decoration: overline; }
         }
     }
 
