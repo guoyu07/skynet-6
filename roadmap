@@ -2,20 +2,10 @@ This is the list of things I want to add in the future, I'll be adding and subtr
 
 <------------------------------------>
 
-Top 3 things I want to work on right now, in no actual order.
-
-<------------------------------------>
-
-  1.Get broswer games
-  2.Add search feature (downloadable games first?)
-  3.Fix the formatting of the downloads page
-  4.Add link to proxy
-  5.
-
-<------------------------------------>
-
 Home
   >Add search function to the home screen to allow full site searches
+  >Add paypal button
+  >Add light and dark mode with button
 
 Browser Games
   >Continune to build the library
@@ -32,5 +22,3 @@ Other
   >Fix the design of the UI, make it look nicer
   >Fix the boundaries so it's the size of the screen. 
   >Make the website with reactive elements so it looks the same across all devices
-  >Add paypal feature
-  >Add light and dark mode with button to change it. 
