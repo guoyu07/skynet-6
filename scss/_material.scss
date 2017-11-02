@@ -1,0 +1,35 @@
+/* MATERIAL DESIGN BLUE-GRAY*/
+$material-step-1: #ECEFF1;
+$material-step-2: #CFD8DC;
+$material-step-3: #B0BEC5;
+$material-step-4: #90A4AE;
+$material-step-5: #78909C;
+$material-step-6: #607D8B;
+$material-step-7: #546E7A;
+$material-step-8: #455A64;
+$material-step-9: #37474F;
+$material-step-10: #263238;
+
+$material-steps: $material-step-1, $material-step-2, $material-step-3,
+                 $material-step-4, $material-step-5, $material-step-6,
+                 $material-step-7, $material-step-8, $material-step-9,
+                 $material-step-10;
+
+@mixin material-color($step) {
+    color: nth($material-steps, $step);
+}
+
+@mixin material-background-color($step) {
+    background-color: nth($material-steps, $step);
+}
+
+@mixin material-border-color($step) {
+    border-color: nth($material-steps, $step);
+}
+
+@mixin material-linear-gradient($step1, $step2, $angle: 90) {
+    background: nth($material-steps, $step1);
+    background: linear-gradient($angle,
+                                nth($material-steps, $step1),
+                                nth($material-steps, $step2));
+}

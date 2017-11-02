@@ -1,9 +1,11 @@
-#File Map
+# File Map
 
 * `css/`: Compiled CSS files from `scss/`
 * `js/`
-    * `_index/`: Javascript for `index.html`
+    * `_*/`: Javascript for `*.html`
+        * `main.js`: Main interaction logic
+        * `ng.js`: AngularJS controllers
     * `depend/`: Dependencies
         * `angular-1.6.6`: AngularJS 1.6.6 Framework
-* `sass/`: Raw SCSS files
+* `scss/`: Raw SCSS files, edit these to see changes
 * `www_html`: HTML files

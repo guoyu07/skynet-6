@@ -1,0 +1,48 @@
+@import 'fonts';
+@import 'mixins';
+@import 'reset';
+@import 'material';
+
+.container {
+    @include display-flex-flow(column, nowrap);
+
+    .wrapper-nav {
+        @include flex(0);
+        @include display-flex-flow(row, wrap);
+
+        width: 100%;
+
+        @include material-background-color(10);
+        border-bottom: solid 3px;
+        @include material-border-color(7);
+
+        list-style: none;
+
+        .nav-link {
+            padding: 10px;
+
+            font-family: $font-stack-title;
+            font-size: 20px;
+            text-decoration: none;
+
+            a {
+                @include material-color(1);
+                text-decoration: none;
+            }
+        }
+
+        .nav-logo {
+            @extend .nav-link;
+
+            a { text-decoration: overline; }
+        }
+
+        .active {
+            @include material-linear-gradient(10, 7, 180deg);
+        }
+    }
+
+    .wrapper {
+        @include flex(1, 1);
+    }
+}
