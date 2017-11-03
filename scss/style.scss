@@ -3,10 +3,12 @@
 @import 'reset';
 @import 'material';
 
+html {
+    @include material-background-color(3);
+}
+
 .container {
     @include display-flex-flow(column, nowrap);
-
-    @include material-background-color(3);
 
     .wrapper-nav {
         @include flex(0);
@@ -46,5 +48,16 @@
 
     .wrapper {
         @include flex(1, 1);
+
+        @include display-flex-flow(column, nowrap);
+
+        width: 100%;
+        height: 100%;
+
+        background-color: inherit;
+
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
     }
 }

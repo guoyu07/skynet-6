@@ -5,6 +5,48 @@
 
 .container {
     .wrapper {
-        
+        .games-greeter {
+            font-family: $font-stack-content;
+            margin: 10px;
+            padding: 10px;
+
+            border: solid 2px;
+            border-radius: 10px;
+            @include material-border-color(5);
+            @include material-background-color(4);
+        }
+
+        .games-container {
+            @include display-flex-flow(row, wrap);
+
+            justify-content: center;
+            align-items: flex-start;
+            align-content: flex-start;
+
+            height: 100%;
+            width: 100%;
+
+            .games-image {
+                @include flex(0, 1);
+
+                margin: 5px;
+
+                width: auto;
+                height: auto;
+
+                a img {
+                    @include material-border-color(5);
+                    border-radius: 10px;
+                    border-width: medium;
+                    border-style: ridge;
+                    -webkit-box-shadow: 3px 6px 15px -1px rgba(0,0,0,0.5);
+                    -moz-box-shadow: 3px 6px 15px -1px rgba(0,0,0,0.5);
+                    box-shadow: 3px 6px 15px -1px rgba(0,0,0,0.5);
+                    max-width: 100%;
+                    width: auto;
+                    height: auto;
+                }
+            }
+        }
     }
 }

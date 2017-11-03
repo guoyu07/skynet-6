@@ -4,9 +4,12 @@
   margin: 0;
   padding: 0; }
 
-html, body, .container {
+html, body {
   width: 100%;
-  height: 100%; }
+  height: auto; }
+  html .container, body .container {
+    width: 100%;
+    height: 100%; }
 
 /* MATERIAL DESIGN BLUE-GRAY*/
 .container .wrapper {
