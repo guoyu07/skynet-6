@@ -6,7 +6,9 @@ Remember, snitches get stiches.
 <--------------------------------------------------------------------->
 
 Skynet is a website I built to play broswer games and make it easier to share game files between people. 
+
 If you are on the school network use this link > https://d1n0cz3q6i4lsz.cloudfront.net/download.html
+
 If you are anywhere else you can use this link > https://www.skynetgames.net
 
 <--------------------------------------------------------------------->
