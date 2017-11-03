@@ -5,9 +5,6 @@
 
 .container {
     .wrapper {
-
-        background-color: red; /* REMOVE AFTER TESTING */
-
         .content {
             @include flex(1);
         }

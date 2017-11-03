@@ -1,19 +1,60 @@
 /* MATERIAL DESIGN BLUE-GRAY*/
-$material-step-1: #ECEFF1;
-$material-step-2: #CFD8DC;
-$material-step-3: #B0BEC5;
-$material-step-4: #90A4AE;
-$material-step-5: #78909C;
-$material-step-6: #607D8B;
-$material-step-7: #546E7A;
-$material-step-8: #455A64;
-$material-step-9: #37474F;
-$material-step-10: #263238;
+$material-bluegray-step-1: #ECEFF1;
+$material-bluegray-step-2: #CFD8DC;
+$material-bluegray-step-3: #B0BEC5;
+$material-bluegray-step-4: #90A4AE;
+$material-bluegray-step-5: #78909C;
+$material-bluegray-step-6: #607D8B;
+$material-bluegray-step-7: #546E7A;
+$material-bluegray-step-8: #455A64;
+$material-bluegray-step-9: #37474F;
+$material-bluegray-step-10: #263238;
 
-$material-steps: $material-step-1, $material-step-2, $material-step-3,
-                 $material-step-4, $material-step-5, $material-step-6,
-                 $material-step-7, $material-step-8, $material-step-9,
-                 $material-step-10;
+$material-bluegray: $material-bluegray-step-1, $material-bluegray-step-2,
+                    $material-bluegray-step-3, $material-bluegray-step-4,
+                    $material-bluegray-step-5, $material-bluegray-step-6,
+                    $material-bluegray-step-7, $material-bluegray-step-8,
+                    $material-bluegray-step-9, $material-bluegray-step-10;
+
+/* MATERIAL DESIGN RED*/
+$material-red-step-1: #FFEBEE;
+$material-red-step-2: #FFCDD2;
+$material-red-step-3: #EF9A9A;
+$material-red-step-4: #E57373;
+$material-red-step-5: #EF5350;
+$material-red-step-6: #F44336;
+$material-red-step-7: #E53935;
+$material-red-step-8: #D32F2F;
+$material-red-step-9: #C62828;
+$material-red-step-10: #B71C1C;
+
+$material-red: $material-red-step-1, $material-red-step-2,
+               $material-red-step-3, $material-red-step-4,
+               $material-red-step-5, $material-red-step-6,
+               $material-red-step-7, $material-red-step-8,
+               $material-red-step-9, $material-red-step-10;
+
+/* MATERIAL DESIGN LIME*/
+$material-lime-step-1: #F9FBE7;
+$material-lime-step-2: #F0F4C3;
+$material-lime-step-3: #E6EE9C;
+$material-lime-step-4: #DCE775;
+$material-lime-step-5: #D4E157;
+$material-lime-step-6: #CDDC39;
+$material-lime-step-7: #C0CA33;
+$material-lime-step-8: #AFB42B;
+$material-lime-step-9: #9E9D24;
+$material-lime-step-10: #827717;
+
+$material-red: $material-lime-step-1, $material-lime-step-2,
+               $material-lime-step-3, $material-lime-step-4,
+               $material-lime-step-5, $material-lime-step-6,
+               $material-lime-step-7, $material-lime-step-8,
+               $material-lime-step-9, $material-lime-step-10;
+
+$material-colors: $material-red, $material-pink, $material-purple,
+                  $material-deeppurple, $material-indigo, material-blue,
+                  $material-lightblue;
 
 @mixin material-color($step) {
     color: nth($material-steps, $step);
