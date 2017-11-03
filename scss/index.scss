@@ -5,8 +5,26 @@
 
 .container {
     .wrapper {
-        margin: 3px;
 
-        background-color: white;
+        background-color: red; /* REMOVE AFTER TESTING */
+
+        .content {
+            @include flex(1);
+        }
+
+        .bitcoin {
+            @include flex(0);
+
+            margin: 20px;
+
+            width: 150px;
+            height: 50px;
+
+            @include material-background-color(1);
+
+            border: solid 3px;
+            border-radius: 10px;
+            @include material-border-color(4);
+        }
     }
 }

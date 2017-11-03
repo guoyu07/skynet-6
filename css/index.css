@@ -13,5 +13,22 @@ html, body {
 
 /* MATERIAL DESIGN BLUE-GRAY*/
 .container .wrapper {
-  margin: 3px;
-  background-color: white; }
+  background-color: red;
+  /* REMOVE AFTER TESTING */ }
+  .container .wrapper .content {
+    -webkit-flex: 1 0 auto;
+    -moz-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto; }
+  .container .wrapper .bitcoin {
+    -webkit-flex: 0 0 auto;
+    -moz-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin: 20px;
+    width: 150px;
+    height: 50px;
+    background-color: #ECEFF1;
+    border: solid 3px;
+    border-radius: 10px;
+    border-color: #90A4AE; }
