@@ -1,72 +1,78 @@
-/*
-Error: Undefined variable: "$material-pink".
-        on line 55 of C:/Users/CorbrIsa/Documents/GitHub/skynet/scss/_material.scss
-        from line 4 of C:\Users\CorbrIsa\Documents\GitHub\skynet\scss\style.scss
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+* {
+  margin: 0;
+  padding: 0; }
 
-50:         @include flex(1);
-51: 
-52:         @include display-flex-flow(column, nowrap);
-53: 
-54:         width: calc(100% - 6px);
-55:         height: 100%;
-56: 
-57:         margin: 3px;
-58: 
-59:         background-color: inherit;
-60: 
+html, body {
+  width: 100%;
+  height: 100%; }
+  html .container, body .container {
+    width: 100%;
+    height: 100%; }
 
-Backtrace:
-C:/Users/CorbrIsa/Documents/GitHub/skynet/scss/_material.scss:55
-C:\Users\CorbrIsa\Documents\GitHub\skynet\scss\style.scss:4
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/list_literal.rb:63:in `block in _perform'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/list_literal.rb:63:in `map'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/list_literal.rb:63:in `_perform'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:471:in `visit_variable'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `map'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:20:in `render'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:281:in `render'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:400:in `run'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
-C:/Programs/Koala/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
-C:/Programs/Koala/bin/sass:18:in `load'
-C:/Programs/Koala/bin/sass:18:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$material-pink\".\A         on line 55 of C:/Users/CorbrIsa/Documents/GitHub/skynet/scss/_material.scss\A         from line 4 of C:\Users\CorbrIsa\Documents\GitHub\skynet\scss\style.scss\A \A 50:         @include flex(1);\A 51: \A 52:         @include display-flex-flow(column, nowrap);\A 53: \A 54:         width: calc(100% - 6px);\A 55:         height: 100%;\A 56: \A 57:         margin: 3px;\A 58: \A 59:         background-color: inherit;\A 60: "; }
+/* MATERIAL DESIGN BLUE-GRAY*/
+/* MATERIAL DESIGN RED*/
+/* MATERIAL DESIGN LIME*/
+html {
+  background-color: #B0BEC5; }
+
+.container {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -moz-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap; }
+  .container .wrapper-nav {
+    -webkit-flex: 0 0 auto;
+    -moz-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    width: 100%;
+    background-color: #263238;
+    border-bottom: solid 3px;
+    border-color: #546E7A;
+    list-style: none; }
+    .container .wrapper-nav .nav-link, .container .wrapper-nav .nav-logo {
+      padding: 10px;
+      font-family: "Raleway", sans-serif;
+      font-size: 20px;
+      text-decoration: none; }
+      .container .wrapper-nav .nav-link a, .container .wrapper-nav .nav-logo a {
+        color: #ECEFF1;
+        text-decoration: none; }
+    .container .wrapper-nav .nav-logo a {
+      text-decoration: none; }
+    .container .wrapper-nav .active a {
+      text-decoration: overline; }
+  .container .wrapper {
+    -webkit-flex: 1 0 auto;
+    -moz-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    -moz-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    width: calc(100% - 6px);
+    height: 100%;
+    margin: 3px;
+    background-color: inherit;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center; }

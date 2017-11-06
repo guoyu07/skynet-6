@@ -46,31 +46,91 @@ $material-lime-step-8: #AFB42B;
 $material-lime-step-9: #9E9D24;
 $material-lime-step-10: #827717;
 
-$material-red: $material-lime-step-1, $material-lime-step-2,
+$material-lime: $material-lime-step-1, $material-lime-step-2,
                $material-lime-step-3, $material-lime-step-4,
                $material-lime-step-5, $material-lime-step-6,
                $material-lime-step-7, $material-lime-step-8,
                $material-lime-step-9, $material-lime-step-10;
 
-$material-colors: $material-red, $material-pink, $material-purple,
-                  $material-deeppurple, $material-indigo, material-blue,
-                  $material-lightblue;
+$material-colors: $material-red, $material-lime, $material-bluegray;
 
-@mixin material-color($step) {
-    color: nth($material-steps, $step);
+@mixin material-color($color, $step) {
+    @if $color == "red" {
+        color: nth(nth($material-colors, 1), $step);
+    }
+    @if $color == "lime" {
+        color: nth(nth($material-colors, 2), $step);
+    }
+    @if $color == "bluegray" {
+        color: nth(nth($material-colors, 3), $step);
+    }
 }
 
-@mixin material-background-color($step) {
-    background-color: nth($material-steps, $step);
+@mixin material-background-color($color, $step) {
+    @if $color == "red" {
+        background-color: nth(nth($material-colors, 1), $step);
+    }
+    @if $color == "lime" {
+        background-color: nth(nth($material-colors, 2), $step);
+    }
+    @if $color == "bluegray" {
+        background-color: nth(nth($material-colors, 3), $step);
+    }
 }
 
-@mixin material-border-color($step) {
-    border-color: nth($material-steps, $step);
+@mixin material-border-color($color, $step) {
+    @if $color == "red" {
+        border-color: nth(nth($material-colors, 1), $step);
+    }
+    @if $color == "lime" {
+        border-color: nth(nth($material-colors, 2), $step);
+    }
+    @if $color == "bluegray" {
+        border-color: nth(nth($material-colors, 3), $step);
+    }
 }
 
-@mixin material-linear-gradient($step1, $step2, $angle: 90) {
-    background: nth($material-steps, $step1);
-    background: linear-gradient($angle,
-                                nth($material-steps, $step1),
-                                nth($material-steps, $step2));
+@mixin set-gradient($col1, $stp1, $col2, $stp2, $ang) {
+    background: linear-gradient($ang,
+                nth(nth($material-colors, $col1), $stp1),
+                nth(nth($material-colors, $col2), $stp2));
+}
+
+@mixin material-linear-gradient($color1, $step1, $color2, $step2, $angle: 90deg) {
+    @if $color1 == "red" {
+        background: nth(nth($material-colors, 1), $step1);
+        @if $color2 == "red" {
+            @include set-gradient(1, $step1, 1, $step2, $angle);
+        }
+        @if $color2 == "lime" {
+            @include set-gradient(1, $step1, 2, $step2, $angle);
+        }
+        @if $color2 == "bluegray" {
+            @include set-gradient(1, $step1, 3, $step2, $angle);
+        }
+    }
+    @if $color1 == "lime" {
+        background: nth(nth($material-colors, 2), $step1);
+        @if $color2 == "red" {
+            @include set-gradient(2, $step1, 1, $step2, $angle);
+        }
+        @if $color2 == "lime" {
+            @include set-gradient(2, $step1, 2, $step2, $angle);
+        }
+        @if $color2 == "bluegray" {
+            @include set-gradient(2, $step1, 3, $step2, $angle);
+        }
+    }
+    @if $color1 == "bluegray" {
+        background: nth(nth($material-colors, 3), $step1);
+        @if $color2 == "red" {
+            @include set-gradient(3, $step1, 1, $step2, $angle);
+        }
+        @if $color2 == "lime" {
+            @include set-gradient(3, $step1, 2, $step2, $angle);
+        }
+        @if $color2 == "bluegray" {
+            @include set-gradient(3, $step1, 3, $step2, $angle);
+        }
+    }
 }

@@ -12,8 +12,8 @@
 
             border: solid 2px;
             border-radius: 10px;
-            @include material-border-color(5);
-            @include material-background-color(1);
+            @include material-border-color(bluegray, 5);
+            @include material-linear-gradient(bluegray, 1, bluegray, 2, 180deg);
         }
 
         .games-container {
@@ -35,7 +35,7 @@
                 height: auto;
 
                 a img {
-                    @include material-border-color(5);
+                    @include material-border-color(bluegray, 5);
                     border-radius: 10px;
                     border-width: medium;
                     border-style: ridge;
