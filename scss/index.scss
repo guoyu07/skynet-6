@@ -8,40 +8,42 @@
         .content {
             @include flex(1);
         }
-        .bitcoin {
+        .footer {
+
             @include flex(0);
 
-            @include display-flex-flow(row, nowrap);
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-
-            box-sizing: border-box;
-
             margin: 20px;
-            padding: 5px;
+            padding: 0;
 
-            width: 150px;
-            height: 50px;
+            text-decoration: none;
 
-            @include material-background-color(bluegray, 1);
+            .bitcoin {
+                @include display-flex-flow(row, nowrap);
+                justify-content: flex-start;
+                align-items: center;
+                align-content: center;
 
-            border: solid 3px;
-            border-radius: 10px;
-            @include material-border-color(bluegray, 4);
+                padding: 5px;
 
-            img {
-                @include flex(0);
-                width: 35px;
-                height: 35px;
-            }
+                @include material-background-color(bluegray, 1);
 
-            a {
-                @include flex(1);
-                font-size: 20px;
-                @include material-color(bluegray, 10);
-                text-decoration: none;
-                padding: 20px;
+                border: solid 3px;
+                border-radius: 10px;
+                @include material-border-color(bluegray, 4);
+
+                img {
+                    @include flex(0);
+                    width: 40px;
+                    height: 40px;
+                }
+
+                span {
+                    @include flex(1);
+                    font-size: 20px;
+                    @include material-color(bluegray, 10);
+                    padding-left: 5px;
+                    font-family: $font-stack-title;
+                }
             }
         }
     }

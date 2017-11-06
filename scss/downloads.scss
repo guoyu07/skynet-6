@@ -7,10 +7,12 @@
     .wrapper {
         .games-greeter {
             font-family: $font-stack-content;
+            font-size: 13px;
+
             margin: 10px;
             padding: 10px;
 
-            border: solid 2px;
+            border: solid 3px;
             border-radius: 10px;
             @include material-border-color(bluegray, 4);
             @include material-background-color(bluegray, 1);
