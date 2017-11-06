@@ -20,9 +20,8 @@ html, body {
   padding: 10px;
   border: solid 2px;
   border-radius: 10px;
-  border-color: #78909C;
-  background: #ECEFF1;
-  background: linear-gradient(180deg, #ECEFF1, #CFD8DC); }
+  border-color: #90A4AE;
+  background-color: #ECEFF1; }
 .container .wrapper .games-container {
   -webkit-display: flex;
   -moz-display: flex;
@@ -46,13 +45,13 @@ html, body {
     width: auto;
     height: auto; }
     .container .wrapper .games-container .games-image a img {
-      border-color: #78909C;
+      border-color: #90A4AE;
       border-radius: 10px;
       border-width: medium;
-      border-style: ridge;
-      -webkit-box-shadow: 3px 6px 15px -1px rgba(0, 0, 0, 0.5);
-      -moz-box-shadow: 3px 6px 15px -1px rgba(0, 0, 0, 0.5);
-      box-shadow: 3px 6px 15px -1px rgba(0, 0, 0, 0.5);
+      border-style: solid;
+      -webkit-box-shadow: inset 3px 6px 15px -1px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: inset 3px 6px 15px -1px rgba(0, 0, 0, 0.5);
+      box-shadow: inset 3px 6px 15px -1px rgba(0, 0, 0, 0.5);
       max-width: 100%;
       width: auto;
       height: auto; }

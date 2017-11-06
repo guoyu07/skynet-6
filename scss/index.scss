@@ -8,11 +8,18 @@
         .content {
             @include flex(1);
         }
-
         .bitcoin {
             @include flex(0);
 
+            @include display-flex-flow(row, nowrap);
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+
+            box-sizing: border-box;
+
             margin: 20px;
+            padding: 5px;
 
             width: 150px;
             height: 50px;
@@ -22,6 +29,20 @@
             border: solid 3px;
             border-radius: 10px;
             @include material-border-color(bluegray, 4);
+
+            img {
+                @include flex(0);
+                width: 35px;
+                height: 35px;
+            }
+
+            a {
+                @include flex(1);
+                font-size: 20px;
+                @include material-color(bluegray, 10);
+                text-decoration: none;
+                padding: 20px;
+            }
         }
     }
 }

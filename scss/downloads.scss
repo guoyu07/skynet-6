@@ -12,8 +12,8 @@
 
             border: solid 2px;
             border-radius: 10px;
-            @include material-border-color(bluegray, 5);
-            @include material-linear-gradient(bluegray, 1, bluegray, 2, 180deg);
+            @include material-border-color(bluegray, 4);
+            @include material-background-color(bluegray, 1);
         }
 
         .games-container {
@@ -35,13 +35,13 @@
                 height: auto;
 
                 a img {
-                    @include material-border-color(bluegray, 5);
+                    @include material-border-color(bluegray, 4);
                     border-radius: 10px;
                     border-width: medium;
-                    border-style: ridge;
-                    -webkit-box-shadow: 3px 6px 15px -1px rgba(0,0,0,0.5);
-                    -moz-box-shadow: 3px 6px 15px -1px rgba(0,0,0,0.5);
-                    box-shadow: 3px 6px 15px -1px rgba(0,0,0,0.5);
+                    border-style: solid;
+                    -webkit-box-shadow: inset 3px 6px 15px -1px rgba(0,0,0,0.5);
+                    -moz-box-shadow: inset 3px 6px 15px -1px rgba(0,0,0,0.5);
+                    box-shadow: inset 3px 6px 15px -1px rgba(0,0,0,0.5);
                     max-width: 100%;
                     width: auto;
                     height: auto;
