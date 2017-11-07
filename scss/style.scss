@@ -2,9 +2,10 @@
 @import 'mixins';
 @import 'reset';
 @import 'material';
+@import 'colors';
 
 html {
-    @include material-background-color(bluegray, 3);
+    @include material-background-color($color-main, 3);
 }
 
 .container {
@@ -16,9 +17,9 @@ html {
 
         width: 100%;
 
-        @include material-background-color(bluegray, 10);
+        @include material-background-color($color-main, 10);
         border-bottom: solid 3px;
-        @include material-border-color(bluegray, 7);
+        @include material-border-color($color-main, 7);
 
         list-style: none;
 
@@ -30,7 +31,7 @@ html {
             text-decoration: none;
 
             a {
-                @include material-color(bluegray, 1);
+                @include material-color($color-main, 1);
                 text-decoration: none;
             }
         }

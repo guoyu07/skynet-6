@@ -2,6 +2,7 @@
 @import 'mixins';
 @import 'reset';
 @import 'material';
+@import 'colors';
 
 .container {
     .wrapper {
@@ -16,8 +17,8 @@
 
             border: solid 3px;
             border-radius: 10px;
-            @include material-border-color(bluegray, 4);
-            @include material-background-color(bluegray, 1);
+            @include material-border-color($color-main, 4);
+            @include material-background-color($color-main, 1);
         }
 
         .games-container {
@@ -39,7 +40,7 @@
                 height: auto;
 
                 a img {
-                    @include material-border-color(bluegray, 4);
+                    @include material-border-color($color-main, 4);
                     border-radius: 10px;
                     border-width: medium;
                     border-style: solid;

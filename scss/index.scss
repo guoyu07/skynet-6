@@ -2,6 +2,7 @@
 @import 'mixins';
 @import 'reset';
 @import 'material';
+@import 'colors';
 
 .container {
     .wrapper {
@@ -25,11 +26,11 @@
 
                 padding: 5px 10px;
 
-                @include material-background-color(bluegray, 1);
+                @include material-background-color($color-main, 1);
 
                 border: solid 3px;
                 border-radius: 10px;
-                @include material-border-color(bluegray, 4);
+                @include material-border-color($color-main, 4);
 
                 img {
                     @include flex(0);
@@ -40,7 +41,7 @@
                 span {
                     @include flex(1);
                     font-size: 20px;
-                    @include material-color(bluegray, 10);
+                    @include material-color($color-main, 10);
                     padding-left: 10px;
                     font-family: $font-stack-title;
                 }
