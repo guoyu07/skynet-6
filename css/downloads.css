@@ -17,13 +17,16 @@ html, body {
 .container .wrapper .games-search input {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
+  width: 500px;
   margin: 10px;
   padding: 10px;
-  width: 400px;
   border: solid 3px;
   border-radius: 10px;
   border-color: #90A4AE;
   background-color: #ECEFF1; }
+  @media screen and (max-width: 550px) {
+    .container .wrapper .games-search input {
+      width: auto; } }
 .container .wrapper .games-container {
   -webkit-display: flex;
   -moz-display: flex;
