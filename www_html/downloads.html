@@ -18,9 +18,8 @@
                 <li class="nav-link"><a href="#">Proxy</a></li>
             </ul>
             <div class="wrapper">
-                <div class="games-greeter">
-                    <h1>Click on a card to download the game! If the download
-                    fails, please try again.</h1>
+                <div class="games-search">
+                    <input placeholder="Search..." type="text" id="searchbox"/>
                 </div>
                 <div class="games-container" ng-controller="GameController as games">
                     <div class="games-image" ng-repeat="game in games.gamelist">
