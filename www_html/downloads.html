@@ -4,9 +4,6 @@
         <title>Skynet</title>
         <link rel="stylesheet" type="text/css" href="../css/style.css" />
         <link rel="stylesheet" type="text/css" href="../css/downloads.css" />
-        <script src="../js/depend/angular-1.6.6/angular.min.js"></script>
-        <script src="../js/_downloads/main.js"></script>
-        <script src="../js/_downloads/ng.js"></script>
     </head>
     <body>
         <div class="container">
@@ -22,12 +19,12 @@
                     <input placeholder="Search..." type="text" id="searchbox"/>
                 </div>
                 <div class="games-container" ng-controller="GameController as games">
-                    <div class="games-image" ng-repeat="game in games.gamelist">
+                    <div id="game-{{game.name}}" class="games-image" ng-repeat="game in games.gamelist">
         				<a href="https://d1n0cz3q6i4lsz.cloudfront.net/{{game.name}}.zip" download="">
         					<img class="game-image" src="https://d1n0cz3q6i4lsz.cloudfront.net/{{game.name}}.jpg" alt="{{game.alt}}">
         				</a>
                     </div>
-                    <div class="games-image" ng-repeat="game in games.weblist">
+                    <div id="game-{{game.name}}" class="games-image" ng-repeat="game in games.weblist">
         				<a href="{{game.url}}">
         					<img class="game-image" src="https://d1n0cz3q6i4lsz.cloudfront.net/{{game.name}}.gif" alt="{{game.alt}}">
         				</a>
@@ -35,5 +32,8 @@
                 </div>
             </div>
         </div>
+        <script src="../js/depend/angular-1.6.6/angular.min.js"></script>
+        <script src="../js/_downloads/ng.js"></script>
+        <script src="../js/_downloads/main.js"></script>
     </body>
 </html>

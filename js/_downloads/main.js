@@ -1,23 +1,23 @@
 var searchbox = document.getElementById("searchbox");
 
 searchbox.onkeyup = function() {
-    var games = document.getElementByClassName("game-image");
-    if(searchbox.value === "")
+    var input = searchbox.value;
+    for (i = 0; i < gamelist.length; i++)
     {
-        for(i = 0; i < games.length; i++)
-        {
-            if(!games[i].alt.includes(searchbox.value)) {
-                games[i].parentElement.parentElement.innerHTML.style.display = "none";
-            }
-            else {
-                games[i].parentElement.parentElement.innerHTML.style.display = "block";
-            }
+        var element = document.getElementById("game-" + gamelist[i].name);
+        if(gamelist[i].alt.toLowerCase().includes(input.toLowerCase())) {
+            element.style.display = "block";
+        } else {
+            element.style.display = "none";
         }
     }
-    else {
-        for(i = 0; i < games.length; i++)
-        {
-            games[i].parentElement.parentElement.innerHTML.style.display = "block";
+    for (i = 0; i < weblist.length; i++)
+    {
+        var element = document.getElementById("game-" + weblist[i].name);
+        if(weblist[i].alt.toLowerCase().includes(input.toLowerCase())) {
+            element.style.display = "block";
+        } else {
+            element.style.display = "none";
         }
     }
 }

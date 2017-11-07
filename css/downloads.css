@@ -14,11 +14,12 @@ html, body {
 /* MATERIAL DESIGN BLUE-GRAY*/
 /* MATERIAL DESIGN RED*/
 /* MATERIAL DESIGN LIME*/
-.container .wrapper .games-greeter {
+.container .wrapper .games-search input {
   font-family: "Open Sans", sans-serif;
-  font-size: 13px;
+  font-size: 20px;
   margin: 10px;
   padding: 10px;
+  width: 400px;
   border: solid 3px;
   border-radius: 10px;
   border-color: #90A4AE;
