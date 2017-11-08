@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="../css/style.css" />
         <link rel="stylesheet" type="text/css" href="../css/downloads.css" />
     </head>
-    <body onload="load()">
+    <body>
         <div class="container">
             <ul class="wrapper-nav">
                 <li class="nav-logo"><a href="index.html">Skynet</a></li>
@@ -19,15 +19,10 @@
                 <div class="games-search">
                     <input placeholder="Search..." type="text" id="searchbox"/>
                 </div>
-                <div class="games-container" ng-controller="GameController as games">
-                    <div id="game-{{game.name}}" class="games-image" ng-repeat="game in games.gamelist">
-        				<a href="https://d1n0cz3q6i4lsz.cloudfront.net/{{game.name}}.zip" download="">
-        					<img class="game-image" src="https://d1n0cz3q6i4lsz.cloudfront.net/{{game.name}}.jpg" alt="{{game.alt}}">
-        				</a>
-                    </div>
-                    <div id="game-{{game.name}}" class="games-image" ng-repeat="game in games.weblist">
-        				<a href="{{game.url}}">
-        					<img class="game-image" src="https://d1n0cz3q6i4lsz.cloudfront.net/{{game.name}}.gif" alt="{{game.alt}}">
+                <div class="games-container" ng-controller="GameController as gameController">
+                    <div id="game-{{game.name}}" class="games-image" title="{{game.altText}}" ng-repeat="game in gameController.games">
+        				<a href="{{game.bindingAddress}}" download="">
+        					<img class="game-image" src="{{game.imageAddress}}" alt="{{game.altText}}">
         				</a>
                     </div>
                 </div>

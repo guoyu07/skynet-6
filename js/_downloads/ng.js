@@ -131,7 +131,7 @@ var gamelist = [
     },
     {
         "name": "halflife",
-        "alt": "Helf-Life"
+        "alt": "Half-Life"
     },
     {
         "name": "rain",
@@ -148,6 +148,10 @@ var gamelist = [
     {
         "name": "strike",
         "alt": "Strike Suit Zero"
+    },
+    {
+        "name": "cuphead",
+        "alt": "Cuphead"
     }
 ]
 
@@ -159,8 +163,42 @@ var weblist = [
     }
 ]
 
+class Game {
+    constructor(name, bindingAddress, imageAddress, altText) {
+        this.name = name;
+        this.bindingAddress = bindingAddress;
+        this.imageAddress = imageAddress;
+        this.altText = altText;
+    }
+}
+
+var games = [];
+for(i = 0; i < gamelist.length; i++)
+{
+    games.push(new Game(
+        gamelist[i].name,
+        "https://d1n0cz3q6i4lsz.cloudfront.net/" + gamelist[i].name + ".zip",
+        "https://d1n0cz3q6i4lsz.cloudfront.net/" + gamelist[i].name + ".jpg",
+        gamelist[i].alt
+    ));
+}
+for(i = 0; i < weblist.length; i++)
+{
+    games.push(new Game(
+        weblist[i].name,
+        weblist[i].url,
+        "https://d1n0cz3q6i4lsz.cloudfront.net/" + weblist[i].name + ".gif",
+        weblist[i].alt
+    ));
+}
+
+games.sort(function (a, b) {
+    if(a.altText < b.altText) return -1;
+    if(a.altText > b.altText) return 1;
+    return 0;
+})
+
 app.controller("GameController", function() {
-    var games = this;
-    games.gamelist = gamelist;
-    games.weblist = weblist;
+    var gameController = this;
+    gameController.games = games;
 })
