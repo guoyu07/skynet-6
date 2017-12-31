@@ -1,13 +1,8 @@
 # skynet
-This is to be kept a secret, if administration finds out about this it may be shut down and everyone will know that you're a little snitch.
-
-Remember, snitches get stiches. 
-
-<--------------------------------------------------------------------->
 
 Skynet is a website I built to play broswer games and make it easier to share game files between people. 
 
-If you are on the school network use this link > https://d1n0cz3q6i4lsz.cloudfront.net/download.html
+If your firewall blocks the normal domain, use this one > https://d1n0cz3q6i4lsz.cloudfront.net/download.html
 
 If you are anywhere else you can use this link > https://www.skynetgames.net
 
