@@ -6,6 +6,8 @@ If your firewall blocks the normal domain, use this one > https://d1n0cz3q6i4lsz
 
 If you are anywhere else you can use this link > https://www.skynetgames.net
 
+If you want to get the most recent updates go here > https://twitter.com/ReallySkynet
+
 <--------------------------------------------------------------------->
 
 If you need a game (you don't, you just want it) contact me somehow and I'll make sure to do my best to get it up. 
