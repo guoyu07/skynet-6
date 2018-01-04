@@ -8,6 +8,8 @@ If you are anywhere else you can use this link > https://www.skynetgames.net
 
 If you want to get the most recent updates go here > https://twitter.com/ReallySkynet
 
+If you wanna check out the goals for the future go here > https://trello.com/b/Qcy90DyA/skynet-games
+
 <--------------------------------------------------------------------->
 
 If you need a game (you don't, you just want it) contact me somehow and I'll make sure to do my best to get it up. 
