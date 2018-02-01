@@ -2,6 +2,13 @@ This is the entire history and patch list of the versions of the website. Read t
 from or whats new in the newest update.
 
 <------------------------------------------>
+Version #020118.1
+    So basically what happened was the servers for Skynet got wiped.
+    This meant we had a chance to rebuild everything into a more organized and effiecient manner.
+        The first attempt at the file system was built when Skynet had 21 game files, now that we are well over 50 and closing in on 100
+        with no signs of stopping, we really used this as an opportunity to make everything just easier for us. 
+    And this is the new Skynet, it looks (and should work) exactly the same, but now on another server!
+        If you do happen across anything broken make sure to let the team know. 
 Version #123117.1
     Happy New Years everyone! To celebrate 2018 we pushed out a huge update!
     The design has changed drastically, it now has a really nice material design.
