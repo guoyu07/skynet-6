@@ -2,9 +2,9 @@
 
 Skynet is a website I built to play broswer games and make it easier to share game files between people. 
 
-If your firewall blocks the normal domain, use this one > https://d1n0cz3q6i4lsz.cloudfront.net/download.html
+If your firewall blocks the normal domain, use this one > http://ec2-54-173-161-77.compute-1.amazonaws.com/index.html
 
-If you are anywhere else you can use this link > https://www.skynetgames.net
+If you are anywhere else you can use this link > https://www.skynetcoop.com
 
 If you want to get the most recent updates go here > https://twitter.com/ReallySkynet
 
